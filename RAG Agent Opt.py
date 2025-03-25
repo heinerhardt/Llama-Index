@@ -35,6 +35,7 @@ class ProcessingConfig:
     temperature: float = 0.1
     db_path: str = "./zenith_vector_db"
     collection_name: str = "zenith_vector_collection"
+    embedding_dim = 1536
 
 class DocumentProcessor:
     def __init__(self, config: ProcessingConfig):
@@ -67,7 +68,7 @@ class DocumentProcessor:
             self.db = PersistentClient(path=self.config.db_path)
             self.collection = self.db.get_or_create_collection(
                 self.config.collection_name,
-                metadata={"hnsw:space": "cosine"}
+                metadata={"hnsw:space": "cosine"}                
             )
             self.vector_store = ChromaVectorStore(chroma_collection=self.collection)
             logging.info("Vector store initialized successfully")

@@ -9,3 +9,4 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 data_proc.log
+grit_install_script.sh
