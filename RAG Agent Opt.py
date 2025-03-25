@@ -234,7 +234,7 @@ async def main():
         processor.create_retriever_agent(index)
 
         # Example usage of the agent
-        query = "Sample text about SKU HA114A1#5MR"
+        query = "Summarize the key features of the HPE Synergy 480 Gen10" 
         response = await processor.run_agent_chat(query)
         if response:
             print(f"Agent Response for '{query}':\n{response.response}")
