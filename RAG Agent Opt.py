@@ -55,12 +55,11 @@ class DocumentProcessor:
         )
 
     def initialize_credentials(self):
-        self.openai_key = "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"  # Replace with your actual OpenAI API key
+        self.openai_key = os.environ.get("OPENAI_API_KEY")
 
         if not self.openai_key:
-            raise ValueError("Missing required OpenAI API key")
+            raise ValueError("Missing required OpenAI API key. Please set the OPENAI_API_KEY environment variable.")
 
-        os.environ["OPENAI_API_KEY"] = self.openai_key
         logging.info("OpenAI API key initialized.")
 
     def setup_database(self):

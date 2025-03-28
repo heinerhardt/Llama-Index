@@ -84,15 +84,15 @@
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/heinerhardt/Llama-Index/blob/master/RAG Agent Opt.py'>RAG Agent Opt.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td><code>❯ Main agent code</code></td>
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/heinerhardt/Llama-Index/blob/master/chromadb_con_test.py'>chromadb_con_test.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td><code>❯ Test connection to check Chromadb</code></td>
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/heinerhardt/Llama-Index/blob/master/requirements.txt'>requirements.txt</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td><code>❯ Python libraries required</code></td>
 			</tr>
 			</table>
 		</blockquote>
@@ -103,7 +103,7 @@
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/heinerhardt/Llama-Index/blob/master/zenith_vector_db/chroma.sqlite3'>chroma.sqlite3</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td><code>❯ Vector Database</code></td>
 			</tr>
 			</table>
 			<details>
