@@ -52,24 +52,11 @@
 
 ```sh
 └── Llama-Index/
-    ├── Quickspecks
-    │   ├── a00000578enw_HPE Storage Fibre Channel Switch B-series SN3600B-a00000578enw.pdf
-    │   ├── a00000586enw_HPE Superdome Flex 280 Solutions for SAP HANA-a00000586enw.pdf
-    │   ├── a00001270enw_HPE Solutions with WEKA-a00001270enw.pdf
-    │   ├── a00001287enw_HPE Hard Disk Drives-a00001287enw.pdf
-    │   ├── a00001288enw_HPE Solid State Disk Drives-a00001288enw.pdf
-    │   ├── a00001632enw_HPE Aruba Networking Mobility Conductor-a00001632enw.pdf
-    │   ├── a00002716enw_iLO Amplifier Pack-a00002716enw.pdf
-    │   ├── a00002907enw_HPE G2 Enterprise Series Racks-a00002907enw.pdf
-    │   ├── a00002908enw_HPE G2 Metered Power Distribution Units-a00002908enw.pdf
-    │   ├── a00002909enw_HPE G2 Switched Power Distribution Units-a00002909enw.pdf
-    │   ├── a00002910enw_HPE G2 Metered and Switched Power Distribution Units-a00002910enw.pdf
-    │   ├── a00008273enw_HPE Nimble Storage All Flash Arrays-a00008273enw.pdf
-    │   └── a00008520enw_HPE Synergy 480 Gen10 Compute Module-a00008520enw.pdf
+    ├── Quickspecks/
     ├── RAG Agent Opt.py
     ├── chromadb_con_test.py
     ├── requirements.txt
-    └── zenith_vector_db
+    └── zenith_vector_db/
         ├── 1d4064e3-5e65-42f1-bf03-161fca40fe41
         └── chroma.sqlite3
 ```
