@@ -177,7 +177,7 @@ Run Llama-Index using the following command:
 **Using `pip`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
-❯ python3 main.py
+❯ python.exe "c:/Temp/Llama Index/RAG Agent.py"
 ```
 
 
