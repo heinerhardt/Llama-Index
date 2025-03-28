@@ -1,9 +1,9 @@
 <p align="center">
     <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" align="center" width="30%">
 </p>
-<p align="center"><h1 align="center">LLAMA-INDEX</h1></p>
+<p align="center"><h1 align="center">ZENITH AI</h1></p>
 <p align="center">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em><code>❯ Based on LLAMA-Index</code></em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/heinerhardt/Llama-Index?style=flat&logo=opensourceinitiative&logoColor=white&color=6e8379" alt="license">
@@ -177,7 +177,7 @@ Run Llama-Index using the following command:
 **Using `pip`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
-❯ python.exe "c:/Temp/Llama Index/RAG Agent.py"
+❯ python.exe "Llama Index/RAG Agent.py"
 ```
 
 
