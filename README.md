@@ -44,7 +44,7 @@
 
 ## 👾 Features
 
-<code>❯ IA Agentes </code>
+<code>❯ AI agent for processing Quickspecks files. More upcoming. </code>
 
 ---
 
