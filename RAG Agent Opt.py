@@ -1,7 +1,7 @@
 import os
 import asyncio
 import logging
-from typing import List, Optional
+from typing import List
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -22,15 +22,15 @@ from llama_index.core.response_synthesizers import TreeSummarize
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.chat_engine import SimpleChatEngine
 from llama_index.core.schema import QueryBundle, NodeWithScore, TextNode
-from llama_index.core.tools import QueryEngineTool, ToolMetadata
+from llama_index.core.tools import QueryEngineTool
 from llama_index.agent.openai import OpenAIAgent
 
 @dataclass
 class ProcessingConfig:
     chunk_size: int = 300
     chunk_overlap: int = 30
-    embedding_model: str = "text-embedding-ada-002"  # OpenAI Embedding Model
-    llm_model: str = "gpt-4"  # OpenAI LLM Model
+    embedding_model: str = "text-embedding-ada-002"
+    llm_model: str = "gpt-4"
     openai_model: str = "gpt-4"
     temperature: float = 0.1
     db_path: str = "./zenith_vector_db"
@@ -85,12 +85,10 @@ class DocumentProcessor:
         )
 
     def get_document_hash(self, document: Document) -> str:
-        """Generate a unique hash for document content."""
         import hashlib
         return hashlib.md5(document.text.encode()).hexdigest()
 
     def is_document_processed(self, doc_hash: str) -> bool:
-        """Check if document has already been processed."""
         result = self.collection.get(
             where={"document_hash": doc_hash},
             limit=1
@@ -136,7 +134,6 @@ class DocumentProcessor:
             template="Write a concise summary of the following:\n{text}\nCONCISE SUMMARY:"
         )
 
-        # Create a retriever from the index
         retriever = VectorIndexRetriever(index=index)
 
         return RetrieverQueryEngine(
@@ -161,17 +158,14 @@ class DocumentProcessor:
             temperature=self.config.temperature
         )
 
-        # Create a retriever
         retriever = VectorIndexRetriever(index=index)
 
-        # Create a tool for retrieving documents
         doc_reader_tool = QueryEngineTool.from_defaults(
             query_engine=RetrieverQueryEngine(retriever=retriever),
             name="doc_reader",
             description="Useful for answering questions about the documents.",
         )
 
-        # Create the agent
         self.agent = OpenAIAgent.from_tools(
             tools=[doc_reader_tool],
             llm=OpenAI(model=self.config.openai_model, temperature=self.config.temperature),
@@ -211,7 +205,6 @@ class DocumentProcessor:
                 return None
         except Exception as e:
             logging.error(f"Evaluation failed: {e}")
-            logging.error(f"Error: {e}")
             return None
 
 async def main():
@@ -229,19 +222,16 @@ async def main():
 
         index = await processor.process_documents(documents)
 
-        # Create the Retriever-Enabled OpenAI Agent
         processor.create_retriever_agent(index)
 
-        # Example usage of the agent
-        query = "Summarize the key features of the HPE Synergy 480 Gen10" 
-        response = await processor.run_agent_chat(query)
-        if response:
-            print(f"Agent Response for '{query}':\n{response.response}")
-
-        # You can also have a conversation with the agent
-        # response = await processor.run_agent_chat("Can you summarize the information?")
-        # if response:
-        #     print(f"Agent Response:\n{response.response}")
+        # Prompt user for their question
+        query = input("Please enter your question: ")
+        if query:
+            response = await processor.run_agent_chat(query)
+            if response:
+                print(f"Agent Response for '{query}':\n{response.response}")
+        else:
+            print("No question entered.")
 
     except Exception as e:
         logging.error(f"Processing pipeline failed: {e}")

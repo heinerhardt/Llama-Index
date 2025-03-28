@@ -182,11 +182,18 @@ Run Llama-Index using the following command:
 
 
 ### 🧪 Testing
-You have to export you OPENAI API key first:
+Today the agent works only with OPENAI LLM. You have to export your OPENAI API key first:
 **Using `setx`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
 ❯ setx OPENAI_API_KEY "your_openai_api_key"
+```
+
+Today the agent works only with OPENAI LLM. While run the agent will make you question:
+**Using `python`** &nbsp; [<img align="center" src="" />]()
+
+```sh
+❯ query = input("Please enter your question: ")
 ```
 
 
