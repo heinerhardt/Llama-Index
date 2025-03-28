@@ -189,13 +189,19 @@ Today the agent works only with OPENAI LLM. You have to export your OPENAI API k
 ❯ setx OPENAI_API_KEY "your_openai_api_key"
 ```
 
-Today the agent works only with OPENAI LLM. While run the agent will make you question:
+While run, the agent will make you a question:
 **Using `python`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
 ❯ query = input("Please enter your question: ")
 ```
 
+Upload new PDF to Quickspecks folder to get agent trained on data
+**Using `cp`** &nbsp; [<img align="center" src="" />]()
+
+```sh
+❯ cd your_PDF.pdf /Quickspecks
+```
 
 ---
 ## 📌 Project Roadmap
