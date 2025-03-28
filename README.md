@@ -177,16 +177,16 @@ Run Llama-Index using the following command:
 **Using `pip`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
-❯ python.exe "Llama Index/RAG Agent.py"
+❯ python.exe "RAG Agent.py"
 ```
 
 
 ### 🧪 Testing
-Run the test suite using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="" />]()
+You have to export you OPENAI API key first:
+**Using `setx`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
-❯ echo 'INSERT-TEST-COMMAND-HERE'
+❯ setx OPENAI_API_KEY "your_openai_api_key"
 ```
 
 
