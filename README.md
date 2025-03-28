@@ -200,7 +200,7 @@ Upload new PDF to Quickspecks folder to get agent trained on data
 **Using `cp`** &nbsp; [<img align="center" src="" />]()
 
 ```sh
-❯ cd your_PDF.pdf /Quickspecks
+❯ cp your_PDF.pdf /Quickspecks
 ```
 
 ---
