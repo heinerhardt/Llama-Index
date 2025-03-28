@@ -1,19 +1,19 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
+    <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" align="center" width="30%">
 </p>
 <p align="center"><h1 align="center">LLAMA-INDEX</h1></p>
 <p align="center">
 	<em><code>❯ REPLACE-ME</code></em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/heinerhardt/Llama-Index?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/heinerhardt/Llama-Index?style=for-the-badge&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/heinerhardt/Llama-Index?style=for-the-badge&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/heinerhardt/Llama-Index?style=for-the-badge&color=0080ff" alt="repo-language-count">
+	<img src="https://img.shields.io/github/license/heinerhardt/Llama-Index?style=flat&logo=opensourceinitiative&logoColor=white&color=6e8379" alt="license">
+	<img src="https://img.shields.io/github/last-commit/heinerhardt/Llama-Index?style=flat&logo=git&logoColor=white&color=6e8379" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/heinerhardt/Llama-Index?style=flat&color=6e8379" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/heinerhardt/Llama-Index?style=flat&color=6e8379" alt="repo-language-count">
 </p>
 <p align="center">Built with the tools and technologies:</p>
 <p align="center">
-	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python">
+	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
 </p>
 <br>
 
